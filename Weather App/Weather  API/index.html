@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getData()">
+    <div class="box">
+        <input type="text" onchange="getData()" id="search" value="Mumbai">
+        <div>
+            <h1 id="temp">27<sup>o</sup></h1>
+            <p style="text-align: center; font-size: 40px; color: white;">Celcius</p>
+            <p class="data">Wind Speed <span id="ws">6.8</span></p>
+            <p class="data">Humidity <span id="hmdt">3.4</span></p>
+        </div>
+        <div  style="display:flex; justify-content:center">
+            <img width="300px" src="sunimg.png" alt="weather icon">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

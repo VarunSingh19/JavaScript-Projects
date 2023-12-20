@@ -1,0 +1,580 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background: black;
+    min-height: 6rem;
+    width: 100%;
+    font-family: 'Roboto' , sans-serif;
+    position: fixed;
+    z-index: 40;
+  }
+  
+  .burger{
+    display: none;
+    transform: translateX(1rem);
+  }
+  
+  .burger div{
+    width:2.25rem;
+    height:0.25rem;
+    background-color: white;
+    margin: 7px;
+    transition: all 0.3s ease;
+  }
+  
+  .logo{
+    cursor: pointer;
+    width: 8.75rem;
+    margin-left: 5rem;
+    position: relative;
+    right: 11rem;
+  }
+  
+  .navList{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    position: relative;
+    right:-12rem
+  }
+  
+  .navItem{
+    list-style-type: none;
+  }
+  
+  .navLink{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: bold;
+  }
+  
+  .navLink:hover{
+    color: #26D769;
+  }
+
+  .mainSection{
+    display: flex;
+    background: #171111;
+    position: relative;
+    width: 100vw;
+    height: 50rem;
+    z-index: 1;
+  }
+  
+  .phone{
+    position: absolute;
+    left: 5.5%;
+    top: 26%;
+    width : 15rem;
+    z-index: 1;
+  }
+  
+  .mItem{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: 43%;
+    left: 100%;
+    font-size: 2rem;
+    list-style: none;
+    color: white;
+    margin: 0rem;
+    width: 15rem;
+  }
+  .signup{
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    height: 35.5rem;
+    width: 31rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    padding-left: 3.5rem;
+    padding-right:3.5rem;
+    padding-top: 3rem;
+  }
+  
+  label{
+    font-weight: 700;
+    font-size: 0.7rem;
+    line-height: 1.5rem; 
+    letter-spacing: 0.05em;
+  }
+  
+  label.formalities{
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  
+  label.formalities2{
+    font-size: 0.5rem;
+    text-align: center;
+    line-height: 0.7rem;
+    display: block;
+  }
+  
+  label.formalities3{
+    font-size: 0.6rem;
+    text-align: center;
+    display: block;
+  }
+  
+  label a{
+    color:#26D769
+  }
+  
+  button{
+    width: 22.18rem;
+    height: 4.31rem;
+    background: #26D769;
+    border-radius: 40px;
+    border: #26D769;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 4%;
+    margin-right:4%;
+  }
+  
+  input{
+  width: 24.5rem;
+  height: 3.25rem;
+  border: 1px solid #ACACAC;
+  border-radius: 0.43rem;
+  padding: 1.25rem;
+  }
+  
+  
+  .footer{
+    position: relative;
+    width: 100vw;
+    height: 24.6rem;
+    background: #000000;
+  }
+  
+  .footlogo{
+    position: absolute;
+    left: 8%;
+    top: 17%;
+    max-width: 13rem;
+  }
+  
+  .ftext1{
+    position: absolute;
+    display: block;
+    width: 12.5rem;
+    height: 2rem;
+    list-style: none;
+    left: 45%;
+    top: 17%;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.68;
+    line-height: 2;
+    letter-spacing: 0.05em;
+    color: white;
+    margin-bottom: 1rem ;
+  }
+  
+  .ftext2{
+    position: absolute;
+    display: block;
+    width: 12.5rem;
+    height: 2rem;
+    list-style: none;
+    right: 12%;
+    top: 17%;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.68;
+    line-height: 2;
+    letter-spacing: 0.05em;
+    color: white;
+    margin-bottom: 1rem ;
+  }
+  
+  .footerHead{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ACACAC;
+  }
+  
+  .ftext{
+    margin-bottom: 1rem;
+    width: 25;
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  @media only screen and (max-width: 1340px) {
+    .mItem{
+      display: none;
+    }
+  
+    .logo{
+      right: 5rem;
+    }
+  
+    .navList{
+      width: 30%;
+      right: -6.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 960px) {
+    .ftext1{
+      left: 40%;
+    }
+  
+    .navList{
+      right: -1.5rem;
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+  
+    .mItem{
+      display:block;
+      position: relative;
+      left: 16rem;
+      top: 7.5rem;
+    }
+  
+    .mList{
+      width: 0rem;
+    }
+  
+    .phone{
+      top: 3rem;
+      left: 10rem;
+    }
+  
+    .mainSection{
+      height: 67rem;
+    }
+    
+    .signup{
+      top: 30rem;
+      transform: scale(85%);
+      right: 10rem;
+    }
+  
+    .ftext1{
+      transform: scale(85%);
+    }
+  
+    .ftext2{
+      transform: scale(85%);
+    }
+  
+    .footer{
+      height: 21rem;
+    }
+  }
+  
+  @media only screen and (max-width: 780px) {
+    
+    .burger{
+      display: block;
+      cursor: pointer;
+    }
+  
+    .navList{
+      position:absolute;
+      top: 6rem;
+      right: 0rem;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 15rem;
+      width: 100%;
+      transform: translateX(100%);
+      opacity: 0.45;
+      transition: 0.5s ease-in;
+  
+      background-image: linear-gradient(
+      50deg,
+      hsl(143deg 70% 50%) 0%,
+      hsl(128deg 100% 24%) 18%,
+      hsl(120deg 100% 8%) 27%,
+      hsl(339deg 0% 0%) 34%,
+      hsl(339deg 0% 0%) 45%,
+      hsl(339deg 0% 0%) 50%,
+      hsl(339deg 0% 0%) 61%,
+      hsl(339deg 0% 0%) 68%,
+      hsl(339deg 0% 0%) 79%,
+      hsl(0deg 0% 0%) 100%
+    );
+    
+    }
+  
+    .nav-active{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  
+    .toggle .line1{
+      transform: rotate(-45deg) translate(-10px,6px);
+    }
+  
+    .toggle .line2{
+      opacity: 0;
+    }
+  
+    .toggle .line3{
+      transform: rotate(45deg) translate(-10px,-6px);
+    }
+  
+    .navList .navItem{
+      opacity: 0;
+    }
+  
+    @keyframes navLinkFade{
+      
+      from{
+        opacity: 0;
+        transform: translateX(50px);
+      }
+  
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  
+    .mItem{
+      display:block;
+      position: relative;
+      left: 13rem;
+      top: 8.5rem;
+    }
+  
+    .mList{
+      width: 0rem;
+    }
+  
+    .phone{
+      width: 12.5rem;
+      top: 10rem;
+      left: 5.5rem;
+    }
+  
+    .mainSection{
+      height: 65rem;
+    }
+  
+    .signup{
+      top: 30.5rem;
+      transform: scale(75%);
+      right: 8rem;
+    }
+  
+    .ftext1{
+      transform: scale(75%);
+    }
+  
+    .ftext2{
+      transform: scale(75%);
+      right: 1rem;
+    }
+  
+    .footer{
+      height: 20rem;
+    }
+  }
+  
+  @media only screen and (max-width: 680px) {
+  
+    .burger{
+      transform: scale(90%);
+    }
+  
+    .mItem{
+      left: 11rem;
+      font-size: 1.65rem;
+    }
+  
+    .phone{
+      width: 10.5rem;
+      top: 10rem;
+      left: 7rem;
+    }
+  
+    .signup{
+      top: 28rem;
+      transform: scale(70%);
+      right: 3.75rem;
+    }
+  
+    .mainSection{
+      height: 62rem;
+    }
+  
+    .footlogo{
+      width: 8rem;
+    }
+  
+    .ftext1{
+      transform: scale(70%);
+      left: 13rem;
+    }
+  
+    .ftext2{
+      transform: scale(70%);
+      right: 0.3rem;
+    }
+  
+    .footer{
+      height: 18rem;
+    }
+  }
+  
+  @media only screen and (max-width: 562px) {
+  
+    .burger{
+      transform: scale(80%);
+    }
+  
+    .mItem{
+      left: 8.5rem;
+      font-size: 1.35rem;
+      top: 8.5rem;
+    }
+  
+    .phone{
+      width: 9.5rem;
+      top: 10rem;
+      left: 3rem;
+    }
+  
+    .mainSection{
+      height: 55rem;
+    }
+  
+    .signup{
+      top: 22.5rem;
+      transform: scale(57%);
+      right: -2.5rem;
+    }
+  
+    .footlogo{
+      width: 8rem;
+    }
+  
+    .ftext1{
+      top: 6.5rem;
+      left: 1.20rem;
+      transform: scale(65%);
+    }
+  
+    .ftext2{
+      top: 6.5rem;
+      transform: scale(65%);
+      right: 1.20rem;
+    }
+  
+    .footerHead{
+      margin-bottom: 0.75rem;
+    }
+  
+    .footer{
+      height: 18rem;
+    }
+  }
+  
+  @media only screen and (max-width: 442px) {
+  
+    .burger{
+      transform: scale(70%);
+    }
+  
+    .mItem{
+      left: 6rem;
+      font-size: 0.9rem;
+      top: 7.5rem;
+    }
+  
+    .phone{
+      width: 6rem;
+      top: 10rem;
+      left: 5rem;
+    }
+  
+    .mainSection{
+      height: 40rem;
+    }
+  
+    .signup{
+      top: 12.5rem;
+      transform: scale(44%);
+      right: -4.5rem;
+    }
+  
+    .ftext1{
+      top: 7.5rem;
+      left: -0.5rem;
+      transform: scale(45%);
+    }
+  
+    .ftext2{
+      top: 7.5rem;
+      right: -0.5rem;
+      transform: scale(45%);
+    }
+  }
+  
+  @media only screen and (max-width: 342px) {
+  
+    .burger{
+      transform: scale(60%);
+    }
+  
+    .mItem{
+      top: 7rem;
+      font-size: 0.8rem;
+      left: 3.75rem;
+    }
+  
+    .phone{
+      width: 4.5rem;
+      top: 10rem;
+      left: 2.5rem;
+    }
+  
+    .mainSection{
+      height: 37rem;
+    }
+  
+    .signup{
+      top: 10.5rem;
+      transform: scale(35%);
+      right: -8.5rem;
+    }
+  
+    .ftext1{
+      top: 7.5rem;
+      left: -1.5rem;
+      transform: scale(38%);
+    }
+  
+    .ftext2{
+      top: 7.5rem;
+      right: -1.5rem;
+      transform: scale(38%);
+    }
+  }
